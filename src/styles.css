@@ -11,6 +11,12 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
+.wrapper {
+max-width: 700px;
+margin: 0px auto;
+
+}
+
 .container {
   background: rgb(255, 255, 255, 0.4);
   padding: 30px;
@@ -28,7 +34,7 @@ html {
 
 #searchbox {
   border-radius: 30px;
-  padding: 6px 180px 5px 12px;
+  padding: 6px 150px 5px 12px;
   border: none;
 }
 
@@ -44,7 +50,18 @@ html {
 }
 
 .result-container {
-  margin-top: 40px;
+  margin-top: 20px;
+}
+
+a {
+  color: white;
+}
+
+.units {
+  display: inline;
+  float: right;
+  margin-top: -6%;
+
 }
 
 .wind-humidity {
@@ -85,7 +102,7 @@ h2 {
 }
 
 .align-items-center > div > i {
-  font-size: 40px;
+  font-size: 35px;
   padding: 5px 0 5px 25px;
   text-align: center;
 }
@@ -96,4 +113,17 @@ h2 {
 
 ul {
   padding: 130px 0px 0px 70px;
+}
+
+h6 {
+  display: block;
+  text-align: center;
+font-size: 12px;
+color: white;
+padding-top: 670px;
+}
+
+
+.fa-github {
+font-size: 12px;
 }

@@ -17,12 +17,13 @@
   </head>
 
   <body>
-	
+	<div class="wrapper">
 		<div class="container">
       <form action="city">
         <input type="text" id="searchbox" placeholder="Enter your city" />
         <input type="submit" class="btn btn-outline-light" value="Search">
       </form>
+	<div class="units"><strong>C° <a id="fahrenheit-symbol" href="#">F°</a> </strong></div>
       <div class="result-container">
         <div class="row">
           <div class="col-6">
@@ -34,7 +35,7 @@
 							<span id="current-time"> 01/31-2021 </span> </p> 
 							<p id="description">Cloudy</p> 
 							<h2> 
-								<i class="fas fa-cloud"></i> <span class="temperature-number"> 10°</span> 
+								<i class="fas fa-cloud"></i> <span class="temperature-number"> 10°</span>
 							</h2>
 					</i>
           </div>
@@ -88,23 +89,39 @@
 						</div>	
 			<div class="row align-items-end">
 							<div class="col">
-								9°C
+								9°
 							</div>
 							<div class="col">
-								12°C
+								12°
 							</div>
 							<div class="col">
-								11°C
+								11°
 							</div>
 							<div class="col">
-								6°C
+								6°
 							</div>
 							<div class="col">
-								5°C
+								5°
 							</div>
 						</div>
 		</div>
+		</div> 
+		
+		<h6>
+			<i class="fab fa-github"></i>
+			<a
+			href="https://github.com/HelenaRye/helenas_weatherapp"
+			id="github-link"
+			target="_blank"
+			>
+			Open-source code
+		</a>
+		by Helena Rye
+	</h6>
+</div>
+		  <script src="src/index.js"></script>
 	<script src="src/index.js">
 	</script> 
 	</body>
+
 </html>
