@@ -46,6 +46,8 @@ searchForm.addEventListener("submit", showCity);
 
 function showTemperature(response) {
   let temperature = Math.round(response.data.main.temp);
+  celsiusTemperature = Math.round(response.data.main.temp);
+
   let temperatureElement = document.querySelector(".temperature-number");
   temperatureElement.innerHTML = `${temperature}°`;
   let localCity = document.querySelector("h1");
@@ -57,3 +59,27 @@ function showTemperature(response) {
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
 }
+
+// Adding fahrenheit and celsius converter
+
+function showFahrenheitTemperature (event) {
+  event.preventDefault();
+  let fahrenheitTemperature = (celsiusTemperature * 9)/5+32;
+  let temperatureElement = document.querySelector(".temperature-number");
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+
+}
+
+function showCelsiusTemperature (event) {
+  event.preventDefault();
+  temperatureEelement.innerHTML = Math.round(celsiusTemperature);
+
+}
+
+let celsiusTemperature = null;
+
+let fahrenheitLink = document.querySelector("#fahrenheit-symbol");
+fahrenheitLink.addEventListener("click", showFahrenheitTemperature);
+
+let celsiusTemperature = document.querySelector("#celsius-symbol");
+celsiusTemperature.addEventListener("click", showCelsiusTemperature);
