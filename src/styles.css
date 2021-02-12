@@ -3,7 +3,7 @@
 body,
 html {
   font-family: sans-serif;
-  background-image: url("Images/bg.jpg");
+  background-image: url('../Images/bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
