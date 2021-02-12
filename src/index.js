@@ -88,3 +88,5 @@ fahrenheitLink.addEventListener("click", showFahrenheitTemperature);
 
 let celsiusLink = document.querySelector("#celsius-symbol");
 celsiusLink.addEventListener("click", showCelsiusTemperature);
+
+searchCity("Copenhagen");
