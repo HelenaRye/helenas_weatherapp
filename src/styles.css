@@ -127,3 +127,17 @@ padding-top: 670px;
 .fa-github {
 font-size: 12px;
 }
+
+#celsius-symbol:hover {
+color:white;
+text-decoration: underline;
+}
+
+#fahrenheit-symbol:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+#fahrenheit-symbol, #celsius-symbol {
+  text-decoration: none;
+}
